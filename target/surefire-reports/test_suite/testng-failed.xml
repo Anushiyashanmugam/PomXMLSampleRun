@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [test_suite]" verbose="0">
+  <test name="Some classes(failed)">
+    <classes>
+      <class name="testflow.SampleTestClass">
+        <methods>
+          <include name="meth1"/>
+          <include name="driveLunch"/>
+        </methods>
+      </class> <!-- testflow.SampleTestClass -->
+    </classes>
+  </test> <!-- Some classes(failed) -->
+</suite> <!-- Failed suite [test_suite] -->

@@ -1,0 +1,7 @@
+<suite name = "test_suite">
+	<test name = "Some classes" >
+		<classes>
+			<class name = "testflow.SampleTestClass"/>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 3.775 s <<< FAILURE! - in TestSuite
+testflow.SampleTestClass.driveLunch  Time elapsed: 3.568 s  <<< FAILURE!
+org.openqa.selenium.remote.http.ConnectionFailedException: 
+Unable to establish websocket connection to http://localhost:55010/devtools/browser/2cbfb799-543f-4524-afec-6dc383b8c388
+Build info: version: '4.0.0-rc-1', revision: 'bc5511cbda'
+System info: host: 'GTM', ip: '192.168.1.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: driver.version: ChromeDriver
+

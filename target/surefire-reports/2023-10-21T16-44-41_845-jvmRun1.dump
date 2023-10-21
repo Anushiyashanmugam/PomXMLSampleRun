@@ -1,0 +1,36 @@
+# Created at 2023-10-21T16:44:47.839
+org.testng.TestNGException: java.io.FileNotFoundException: https://testng.org/testng=1.0.dtd
+	at org.testng.TestNG.initializeSuitesAndJarFile(TestNG.java:325)
+	at org.testng.TestNG.run(TestNG.java:1081)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: java.io.FileNotFoundException: https://testng.org/testng=1.0.dtd
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1976)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1581)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:224)
+	at org.apache.xerces.impl.XMLEntityManager.setupCurrentEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLEntityManager.startEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLEntityManager.startDTDEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLDTDScannerImpl.setInputSource(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentScannerImpl$DTDDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl.parse(Unknown Source)
+	at java.xml/javax.xml.parsers.SAXParser.parse(SAXParser.java:197)
+	at org.testng.xml.XMLParser.parse(XMLParser.java:39)
+	at org.testng.xml.SuiteXmlParser.parse(SuiteXmlParser.java:16)
+	at org.testng.xml.SuiteXmlParser.parse(SuiteXmlParser.java:9)
+	at org.testng.xml.Parser.parse(Parser.java:170)
+	at org.testng.TestNG.initializeSuitesAndJarFile(TestNG.java:305)
+	... 8 more
+
+
